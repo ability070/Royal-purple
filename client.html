@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Cleaner</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+    background: linear-gradient(to bottom right,#f5f3ff,#ffffff);
+}
+</style>
+
+</head>
+<body>
+
+<section class="min-h-screen flex items-center justify-center px-4 py-12">
+
+<div class="max-w-4xl w-full bg-white shadow-2xl rounded-3xl p-8 md:p-12">
+
+<h1 class="text-4xl md:text-5xl font-bold text-center text-purple-800 mb-3">
+Book a Cleaner
+</h1>
+
+<p class="text-center text-gray-600 mb-10">
+Fill in your details and we'll contact you shortly.
+</p>
+
+<form
+    id="bookingForm"
+    action="https://formspree.io/f/xrevdevv"
+    method="POST"
+    class="grid md:grid-cols-2 gap-6"
+>
+
+    <input
+        required
+        type="text"
+        name="full_name"
+        placeholder="Full Name"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+
+    <input
+        required
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+
+    <input
+        required
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+
+    <input
+        required
+        type="text"
+        name="address"
+        placeholder="Home Address"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+
+    <select
+        required
+        name="service_type"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+        <option value="">Select Service Type</option>
+        <option value="Home Cleaning">Home Cleaning</option>
+        <option value="Deep Cleaning">Deep Cleaning</option>
+        <option value="Office Cleaning">Office Cleaning</option>
+    </select>
+
+    <input
+        type="number"
+        name="rooms"
+        placeholder="Number of Rooms"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+
+    <input
+        type="date"
+        name="cleaning_date"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+
+    <input
+        type="time"
+        name="cleaning_time"
+        class="border p-4 rounded-xl focus:ring-2 focus:ring-purple-600 outline-none"
+    >
+
+    <textarea
+        name="additional_notes"
+        placeholder="Additional Notes"
+        rows="5"
+        class="border p-4 rounded-xl md:col-span-2 focus:ring-2 focus:ring-purple-600 outline-none"
+    ></textarea>
+
+    <!-- Formspree Settings -->
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Home Cleaning Booking"
+    >
+
+    <!-- Replace with your actual thank-you page -->
+    <input
+        type="hidden"
+        name="_next"
+        value="https://yourwebsite.com/thank-you.html"
+    >
+
+    <button
+        type="submit"
+        class="bg-purple-800 hover:bg-purple-900 text-white font-semibold py-4 rounded-xl md:col-span-2 transition duration-300 shadow-lg"
+    >
+        Order Cleaner Now
+    </button>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+</html>

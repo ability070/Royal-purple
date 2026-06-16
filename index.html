@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Purple Cleaning Services</title>
+
+<meta name="description" content="Professional Home Cleaning Services You Can Trust">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+.hero-overlay{
+background:linear-gradient(
+rgba(107,33,168,.85),
+rgba(76,29,149,.85)
+);
+}
+
+.nav-scrolled{
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.testimonial{
+display:none;
+}
+
+.testimonial.active{
+display:block;
+animation:fade .5s ease;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+</style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+<div class="container mx-auto px-6">
+
+<div class="flex justify-between items-center py-5">
+
+<h1 class="text-2xl font-bold text-purple-800">
+Royal Purple
+</h1>
+
+<nav class="hidden md:flex gap-8 font-medium">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About Us</a>
+<a href="#pricing">Pricing</a>
+<!-- <a href="#booking">Book a Cleaner</a> -->
+<a href="#contact">Contact</a>
+</nav>
+
+<a href="client.html"
+class="bg-yellow-400 hover:bg-yellow-500 px-5 py-2 rounded-full font-semibold">
+Book Now
+</a>
+
+</div>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="home"
+class="relative min-h-screen flex items-center justify-center">
+
+<div class="absolute inset-0">
+<img
+  src="images/cleaner4.jpeg"
+  class="w-full h-full object-cover"
+  alt=""
+>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+
+<div class="relative z-10 text-center text-white px-6 max-w-4xl">
+
+<h2 class="text-5xl md:text-7xl font-bold mb-6">
+Professional Cleaning Services You Can Trust
+</h2>
+
+<p class="text-xl mb-10">
+Experienced cleaners delivering spotless homes,
+offices, apartments, and move-in/move-out cleaning services.
+</p>
+
+<!-- <div class="flex flex-col sm:flex-row justify-center gap-4">
+<a href="#booking"
+class="bg-yellow-400 text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition">
+Book a Cleaner
+</a> -->
+
+<a href="#contact"
+class="border-2 border-white px-8 py-4 rounded-full hover:bg-white hover:text-purple-900 transition">
+Get Free Quote
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-4xl font-bold text-center text-purple-800 mb-14">
+Our Services
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white shadow-xl rounded-3xl p-8">
+<div class="text-5xl mb-4">🏠</div>
+<h3 class="font-bold text-xl">Home Cleaning</h3>
+<p class="my-4">Complete residential cleaning solutions.</p>
+<button class="text-purple-700 font-semibold">
+Learn More →
+</button>
+</div>
+
+<div class="bg-white shadow-xl rounded-3xl p-8">
+<div class="text-5xl mb-4">✨</div>
+<h3 class="font-bold text-xl">Deep Cleaning</h3>
+<p class="my-4">Detailed cleaning for every corner.</p>
+<button class="text-purple-700 font-semibold">
+Learn More →
+</button>
+</div>
+
+<div class="bg-white shadow-xl rounded-3xl p-8">
+<div class="text-5xl mb-4">🏢</div>
+<h3 class="font-bold text-xl">Apartment Cleaning</h3>
+<p class="my-4">Perfect maintenance cleaning.</p>
+<button class="text-purple-700 font-semibold">
+Learn More →
+</button>
+</div>
+
+<div class="bg-white shadow-xl rounded-3xl p-8">
+<div class="text-5xl mb-4">💼</div>
+<h3 class="font-bold text-xl">Office Cleaning</h3>
+<p class="my-4">Professional workplace cleaning.</p>
+<button class="text-purple-700 font-semibold">
+Learn More →
+</button>
+</div>
+
+<div class="bg-white shadow-xl rounded-3xl p-8">
+<div class="text-5xl mb-4">📦</div>
+<h3 class="font-bold text-xl">Move-In Cleaning</h3>
+<p class="my-4">Fresh start for your new home.</p>
+<button class="text-purple-700 font-semibold">
+Learn More →
+</button>
+</div>
+
+<div class="bg-white shadow-xl rounded-3xl p-8">
+<div class="text-5xl mb-4">🚚</div>
+<h3 class="font-bold text-xl">Move-Out Cleaning</h3>
+<p class="my-4">Leave your property spotless.</p>
+<button class="text-purple-700 font-semibold">
+Learn More →
+</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="bg-purple-50 py-24">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-4xl text-center font-bold text-purple-800 mb-12">
+Why Choose Us
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8 text-center">
+
+<div>✅ Trusted Professionals</div>
+<div>💰 Affordable Pricing</div>
+<div>⚡ Same Day Service</div>
+<div>🌱 Eco-Friendly Products</div>
+<div>🛡 Fully Insured</div>
+<div>⭐ Satisfaction Guaranteed</div>
+
+</div>
+
+<div class="grid md:grid-cols-4 gap-8 mt-16 text-center">
+
+<div>
+<h3 class="text-4xl font-bold text-purple-800">5000+</h3>
+<p>Homes Cleaned</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-purple-800">1000+</h3>
+<p>Happy Clients</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-purple-800">50+</h3>
+<p>Professional Cleaners</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-purple-800">98%</h3>
+<p>Satisfaction Rate</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24">
+
+<div class="container mx-auto px-6">
+
+<div class="grid md:grid-cols-2 gap-12 items-center">
+
+<img
+  src=""
+  alt="About Us"
+  class="rounded-3xl shadow-2xl">
+
+<div>
+
+<h2 class="text-4xl font-bold text-purple-800 mb-6">
+About Us
+</h2>
+
+<p class="text-lg leading-8">
+Royal Purple Cleaning Services was founded with one mission:
+to deliver premium cleaning experiences for homes and businesses.
+Our professional team uses modern equipment and eco-friendly
+products to ensure every space shines.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-24 bg-gradient-to-b from-white to-purple-50">
+
+  <div class="container mx-auto px-6">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-purple-800 mb-4">
+        Our Cleaning Gallery
+      </h2>
+
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        See the transformation our professional cleaners deliver for homes,
+        apartments, offices, and commercial spaces.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="overflow-hidden rounded-3xl shadow-xl group">
+        <img
+          src=""
+          alt="Professional Home Cleaning"
+          loading="lazy"
+          class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+      </div>
+
+      <div class="overflow-hidden rounded-3xl shadow-xl group">
+        <img
+          src=""
+          alt="Kitchen Cleaning"
+          loading="lazy"
+          class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+      </div>
+
+      <div class="overflow-hidden rounded-3xl shadow-xl group">
+        <img
+          src=""
+          alt="Professional Cleaning Team"
+          loading="lazy"
+          class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+      </div>
+
+      <div class="overflow-hidden rounded-3xl shadow-xl group">
+        <img
+          src=""
+          alt="Bathroom Cleaning"
+          loading="lazy"
+          class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+      </div>
+
+      <div class="overflow-hidden rounded-3xl shadow-xl group">
+        <img
+          src=""
+          alt="Office Cleaning"
+          loading="lazy"
+          class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+      </div>
+
+      <div class="overflow-hidden rounded-3xl shadow-xl group">
+        <img
+          src=""
+          alt="Luxury Home Cleaning"
+          loading="lazy"
+          class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-24 bg-gray-50">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-4xl text-center font-bold text-purple-800 mb-12">
+Pricing Plans
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">Basic</h3>
+<p class="text-4xl font-bold my-4">₦15,000</p>
+<ul class="space-y-3">
+<li>2 Bedrooms</li>
+<li>Bathroom Cleaning</li>
+<li>Kitchen Cleaning</li>
+</ul>
+</div>
+
+<div class="bg-purple-800 text-white p-8 rounded-3xl shadow-2xl scale-105">
+<h3 class="text-2xl font-bold">Premium</h3>
+<p class="text-4xl font-bold my-4">₦50,000</p>
+<ul class="space-y-3">
+<li>Entire Property</li>
+<li>Deep Sanitization</li>
+<li>Priority Support</li>
+</ul>
+</div>
+
+<div class="bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">Standard</h3>
+<p class="text-4xl font-bold my-4">₦30,000</p>
+<ul class="space-y-3">
+<li>Up to 4 Bedrooms</li>
+<li>Deep Cleaning</li>
+<li>Window Cleaning</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="py-24">
+
+<div class="container mx-auto px-6 max-w-4xl">
+
+
+<p id="successMsg"
+class="hidden text-green-600 font-bold text-center mt-6">
+Thank you! Your cleaning request has been received.
+Our team will contact you shortly.
+</p>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-24 bg-purple-50">
+
+<div class="container mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-bold text-purple-800 mb-10">
+Customer Reviews
+</h2>
+
+<div class="testimonial active">
+<p>"Excellent service. My house looked brand new!"</p>
+<h4 class="font-bold mt-3">Sarah M.</h4>
+</div>
+
+<div class="testimonial">
+<p>"Professional cleaners and affordable pricing."</p>
+<h4 class="font-bold mt-3">Daniel O.</h4>
+</div>
+
+<div class="testimonial">
+<p>"Best cleaning company I've used."</p>
+<h4 class="font-bold mt-3">Grace A.</h4>
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="py-24">
+
+<div class="container mx-auto px-6 max-w-3xl">
+
+<h2 class="text-4xl font-bold text-center text-purple-800 mb-10">
+FAQs
+</h2>
+
+<div class="space-y-4">
+
+<details class="border rounded-xl p-5">
+<summary>How do I book?</summary>
+<p>Use our booking form above.</p>
+</details>
+
+<details class="border rounded-xl p-5">
+<summary>Do you bring cleaning supplies?</summary>
+<p>Yes, all supplies are included.</p>
+</details>
+
+<details class="border rounded-xl p-5">
+<summary>Are cleaners insured?</summary>
+<p>Absolutely.</p>
+</details>
+
+<details class="border rounded-xl p-5">
+<summary>Can I cancel my booking?</summary>
+<p>Yes, with advance notice.</p>
+</details>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-purple-800 text-white py-24">
+
+<div class="container mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-bold mb-8">
+Contact Us
+</h2>
+
+<p>📞 09060083637</p>
+<p>📧 purpleroyalhomeservices@gmail.com</p>
+<p>📍 14 Marshall Amadi Street Rukpokwu Port Harcourt, Rivers State, Nigeria</p>
+
+<a href="https://wa.me/2348136852946"
+class="inline-block mt-6 bg-green-500 px-8 py-3 rounded-full">
+WhatsApp Us
+</a>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white py-12">
+
+<div class="container mx-auto px-6">
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div>
+<h3 class="font-bold mb-4">Quick Links</h3>
+<p>Home</p>
+<p>Services</p>
+<p>About</p>
+</div>
+
+<div>
+<h3 class="font-bold mb-4">Services</h3>
+<p>Home Cleaning</p>
+<p>Office Cleaning</p>
+<p>Deep Cleaning</p>
+</div>
+
+<div>
+<h3 class="font-bold mb-4">Follow Us</h3>
+<p>Facebook</p>
+<p>Instagram</p>
+<p>Twitter</p>
+</div>
+
+</div>
+
+<div class="text-center mt-8 border-t border-gray-700 pt-6">
+© 2026 Royal Purple Cleaning Services. All Rights Reserved.
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+// Sticky Navbar
+window.addEventListener("scroll", () => {
+const nav = document.getElementById("navbar");
+if(window.scrollY > 50){
+nav.classList.add("nav-scrolled");
+}else{
+nav.classList.remove("nav-scrolled");
+}
+});
+
+// Form Submission
+document.getElementById("bookingForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+document
+.getElementById("successMsg")
+.classList.remove("hidden");
+
+this.reset();
+
+});
+
+// Testimonial Slider
+let testimonials =
+document.querySelectorAll(".testimonial");
+
+let index = 0;
+
+setInterval(() => {
+
+testimonials[index].classList.remove("active");
+
+index++;
+
+if(index >= testimonials.length){
+index = 0;
+}
+
+testimonials[index].classList.add("active");
+
+}, 4000);
+
+</script>
+
+</body>
+</html>
